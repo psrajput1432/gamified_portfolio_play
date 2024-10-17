@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three.js Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/remixicon/fonts/remixicon.css">
+  <script type="module" crossorigin src="/assets/index-BZBAlXWj.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DMfVUYMT.css">
+</head>
+<body>
+  <div id="model"></div>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
+  
+  <!-- Load GLTFLoader -->
+  <script src="https://threejs.org/examples/js/loaders/GLTFLoader.js"></script>
+  <div id="reach">Click to Contact <br><p style="text-decoration: underline;" >mail at: pallavi.singh@iic.ac.in</p></div>
+  <div id="contact"><img src="/assets/contact%20me-Ck8VL3y3.png"></div>
+
+  <div id="Welcome" class="New">
+    <div class="Web">
+      <h2>🎊Welcome to My Gamified Portfolio Website!🎊</h2>
+      <h3 style="color: blueviolet;" >Find the colourful spheres hidden in the model to know more about me.✨</h3>
+      <h2 style="font-style: italic;">You can rotate, zoom in, zoom out the model to find the spheres. (Look and click carefully)</h2>
+      <p>Level 1: 📍Find the blue ball (hint:look on the ground)</p>
+      <button id="play" style="background-color: rgb(8, 116, 8);">Let's Start and have fun🥳</button>
+    </div>
+  </div>
+
+  <div id="popup" class="popup-hidden">
+    <div class="popup-content">
+
+
+        <div class="info" id="name"><h3>Name</h3><input type="text" placeholder="Enter your name" class="input-field"></div>
+
+        <div class="write"></div>
+        <div class="info" id="mail"><h3>Mail id</h3><input type="email" placeholder="Enter your email" class="input-field"></div>
+
+        <div class="write"></div>
+        <div class="info" id="sub"><h3>Subject</h3><input type="text" placeholder="Enter subject" class="input-field"></div>
+
+        <div class="write"></div>
+        <div class="info" id="msg"><h3>Message</h3><textarea placeholder="Enter your message" class="input-field"></textarea></div>
+        <div class="write"></div>
+
+
+      <div class="profile">
+        <div id="linkedln"><a href="https://www.linkedin.com/in/pallavi-singh-021a23208/" target="_blank"><img src="/assets/linkedin-CS8oJc2F.png"></a></div>
+        <div id="git"><a href="https://github.com/psrajput1432" target="_blank"><i class="ri-github-fill"></i></a></div>
+      </div>
+        <button id="close-popup">Send</button>
+    </div>
+  </div>
+
+  <div id="BOX" style="display: none;">
+    <div id="BOX-content">
+        <p id="BOX-message"></p>
+        <button id="close-BOX" style="background-color: aqua;">Close</button>
+    </div>
+  </div>
+
+  <div id="typewriter-message" style="visibility: hidden;"></div>
+
+  <!-- Load your main script as a module -->
+  <!--<script src="popup.js"></script>   External JavaScript for handling the pop-up -->
+</body>
+</html>

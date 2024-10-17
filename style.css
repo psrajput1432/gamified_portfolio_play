@@ -1,0 +1,191 @@
+*{
+   margin:0%;
+   padding:0%;
+}
+
+html,body{
+   height: 100%;
+   width:  100%;
+   overflow: hidden;
+}
+
+#contact {
+  position: absolute;  /* Positions the container absolutely on the screen */
+  bottom: 2%;           /* Aligns the container to the bottom of the screen */
+  right: 0;            /* Aligns the container to the right of the screen */
+  padding-right: 5vb;
+  margin-bottom: 5vh;
+  cursor: pointer;
+}
+
+#contact img {
+  height: 15vh;   /* Sets the height of the image relative to the viewport height */
+  width: auto;    /* Maintains the aspect ratio */
+}
+
+#reach{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 5vb;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+  color:white;
+  font-style: italic;
+  /* font-family: cursive; */
+}
+
+/* popup.css */
+#close-popup{
+  background-color: blue;
+  border-radius: 10%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+
+#close-popup:hover{
+  background-color: darkblue;
+}
+
+
+.popup-hidden {
+  display: none; /* Hide the pop-up */
+}
+
+
+.popup-visible {
+  display: block; /* Show the pop-up */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+
+/* Overlay for the background when the pop-up is open */
+#popup::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white; /* Semi-transparent background */
+  z-index: 1000; /* Behind the pop-up but in front of other content */
+  display: none; /* Hide by default */
+}
+
+
+#popup.popup-visible::before {
+  display: block; /* Show overlay when the pop-up is visible */
+}
+
+
+.popup-content {
+  position: relative; /* For positioning within the pop-up */
+  z-index: 1001; /* Above the overlay */
+  border-radius: 8px;
+}
+
+
+
+.profile{
+  display: flex;
+  justify-content: space-between; /* Ensures left and right alignment */
+  padding: 10px;
+}
+
+#git {
+  margin-top: 20px; /* Adjust the top margin as per your preference */
+  cursor: pointer;
+}
+
+#git i {
+  font-size: 36px; /* Adjust the size of the GitHub icon */
+  color: black;
+  cursor: pointer;
+}
+
+#linkedln img{
+  height: 38px;
+  width: auto;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#play{
+  cursor: pointer;
+  justify-content: center;
+}
+
+#BOX {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);  /* Black background with transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#BOX-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  width: 80%;
+}
+
+#BOX-message {
+  color: black; /* Change this to any color you want */
+  font-size: 20px; /* Adjust font size if needed */
+  /* You can add other styles like font-family, text-align, etc. */
+}
+
+/* Welcome */
+#Welcome {
+  position: absolute; /* Make the pop-up float above other elements */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Move to exact center */
+  z-index: 10; /* Ensure it's above the background but not the highest layer */
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Optional shadow for styling */
+}
+
+.New {
+  display: none; /* Hide the pop-up by default */
+}
+
+.View {
+  display: block;
+}
+
+/* #close-popup {
+  margin-top: 10px;
+  padding: 5px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+
+/*.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin-right: 10px;
+  color: blue;
+  text-decoration: none;
+} */
